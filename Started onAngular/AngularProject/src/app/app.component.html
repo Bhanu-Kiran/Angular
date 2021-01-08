@@ -1,5 +1,17 @@
-<div>
-  <app-student [student] ="studentX" ></app-student>
+<div class="container" >
+  <!-- <app-student [student] ="studentX" ></app-student>
   <app-stortsman></app-stortsman>
-  <app-entertainer></app-entertainer>
+  <app-entertainer></app-entertainer> -->
+  <!-- <app-bootstrap-example [links] = "linksArr"></app-bootstrap-example> -->
+  <!-- <div class = "row d-inline-block" *ngFor="let item of Data">
+    <div class="col-12">
+      <app-bootsp-card [Friends] = "item"></app-bootsp-card>
+    </div>
+  </div> -->
+  <div class = "row" >
+    <div class="col-md-3 d-inline-block" *ngFor="let item of Data">
+      <app-bootsp-card [Friends] = "item"></app-bootsp-card>
+    </div>
+  </div>
+  
 </div>
