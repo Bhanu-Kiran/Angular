@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularProject';
   studentX = "Student from app comp"
+  nameSelected:any;
   img = "src/assets/profile.png";
   linksArr = ["HTML","CSS","JS","TS","XAML"]
   Data = [
@@ -23,4 +24,9 @@ export class AppComponent {
     { name : "Tribbiani's",info : "An Actor lets say"},
     { name : "Buffay's",info : "An Actor lets say"}
   ]
+  dataFromChild(event){
+    if(event){
+      this.nameSelected = event;
+    }
+  }
 }
